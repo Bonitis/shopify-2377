@@ -309,7 +309,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "@mapping": "shopify:seans-store-takeshape:Tag.nameId"
+            "@mapping": "takeshape:local:Tag.nameId"
           }
         },
         "required": [
