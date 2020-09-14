@@ -36,22 +36,22 @@
     "getPost": {
       "type": "Post",
       "resolver": "takeshape:get",
-      "source": "takeshape:self:Post"
+      "source": "takeshape:local:Post"
     },
     "getTag": {
       "type": "Tag",
       "resolver": "takeshape:get",
-      "source": "takeshape:self:Tag"
+      "source": "takeshape:local:Tag"
     },
     "getTagList": {
       "type": "PaginatedList<Tag>",
       "resolver": "takeshape:list",
-      "source": "takeshape:self:Tag"
+      "source": "takeshape:local:Tag"
     },
     "getPostList": {
       "type": "PaginatedList<Post>",
       "resolver": "takeshape:list",
-      "source": "takeshape:self:Post"
+      "source": "takeshape:local:Post"
     },
     "getProductList": {
       "resolver": "graphql:query",
@@ -95,32 +95,32 @@
     "deletePost": {
       "type": "boolean",
       "resolver": "takeshape:delete",
-      "source": "takeshape:self:Post"
+      "source": "takeshape:local:Post"
     },
     "updateTag": {
       "type": "Tag",
       "resolver": "takeshape:update",
-      "source": "takeshape:self:Tag"
+      "source": "takeshape:local:Tag"
     },
     "deleteTag": {
       "type": "boolean",
       "resolver": "takeshape:delete",
-      "source": "takeshape:self:Tag"
+      "source": "takeshape:local:Tag"
     },
     "updatePost": {
       "type": "Post",
       "resolver": "takeshape:update",
-      "source": "takeshape:self:Post"
+      "source": "takeshape:local:Post"
     },
     "createTag": {
       "type": "Tag",
       "resolver": "takeshape:create",
-      "source": "takeshape:self:Tag"
+      "source": "takeshape:local:Tag"
     },
     "createPost": {
       "type": "Post",
       "resolver": "takeshape:create",
-      "source": "takeshape:self:Post"
+      "source": "takeshape:local:Post"
     },
     "createProduct": {
       "resolver": "graphql:mutation",
