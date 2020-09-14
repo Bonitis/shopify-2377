@@ -36,22 +36,22 @@
     "getPost": {
       "type": "Post",
       "resolver": "takeshape:get",
-      "source": "takeshape:local:Post"
+      "source": "takeshape:local"
     },
     "getTag": {
       "type": "Tag",
       "resolver": "takeshape:get",
-      "source": "takeshape:local:Tag"
+      "source": "takeshape:local"
     },
     "getTagList": {
       "type": "PaginatedList<Tag>",
       "resolver": "takeshape:list",
-      "source": "takeshape:local:Tag"
+      "source": "takeshape:local"
     },
     "getPostList": {
       "type": "PaginatedList<Post>",
       "resolver": "takeshape:list",
-      "source": "takeshape:local:Post"
+      "source": "takeshape:local"
     },
     "getProductList": {
       "resolver": "graphql:query",
@@ -80,7 +80,7 @@
           }
         }
       },
-      "source": "shopify:seans-store-takeshape:Product",
+      "source": "shopify:seans-store-takeshape",
       "type": "ProductConnection",
       "query": "products"
     }
@@ -95,32 +95,32 @@
     "deletePost": {
       "type": "boolean",
       "resolver": "takeshape:delete",
-      "source": "takeshape:local:Post"
+      "source": "takeshape:local"
     },
     "updateTag": {
       "type": "Tag",
       "resolver": "takeshape:update",
-      "source": "takeshape:local:Tag"
+      "source": "takeshape:local"
     },
     "deleteTag": {
       "type": "boolean",
       "resolver": "takeshape:delete",
-      "source": "takeshape:local:Tag"
+      "source": "takeshape:local"
     },
     "updatePost": {
       "type": "Post",
       "resolver": "takeshape:update",
-      "source": "takeshape:local:Post"
+      "source": "takeshape:local"
     },
     "createTag": {
       "type": "Tag",
       "resolver": "takeshape:create",
-      "source": "takeshape:local:Tag"
+      "source": "takeshape:local"
     },
     "createPost": {
       "type": "Post",
       "resolver": "takeshape:create",
-      "source": "takeshape:local:Post"
+      "source": "takeshape:local"
     },
     "createProduct": {
       "resolver": "graphql:mutation",
