@@ -195,7 +195,7 @@
           "input"
         ]
       },
-      "source": "shopify:seans-store-takeshape:Product",
+      "source": "shopify:seans-store-takeshape",
       "type": "Shopify_ProductCreatePayload",
       "query": "productCreate"
     }
