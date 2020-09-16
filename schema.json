@@ -207,7 +207,6 @@
         "type": "object",
         "properties": {
           "shopifyProduct": {
-            "$ref": "#/shapes/Shopify_Product/schema",
             "@resolver": {
               "resolver": "graphql:query",
               "args": {
