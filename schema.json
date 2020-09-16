@@ -71,6 +71,10 @@
       "args": {
         "type": "object",
         "properties": {
+          "first": {
+            "type": "integer",
+            "description": "Returns up to the first `n` elements from the list."
+          },
           "after": {
             "type": "string",
             "description": "Returns the elements that come after the specified cursor."
@@ -79,17 +83,26 @@
             "type": "integer",
             "description": "Returns up to the last `n` elements from the list."
           },
-          "reverse": {
-            "type": "boolean",
-            "description": "Reverse the order of the underlying list."
-          },
           "before": {
             "type": "string",
             "description": "Returns the elements that come before the specified cursor."
           },
-          "first": {
-            "type": "integer",
-            "description": "Returns up to the first `n` elements from the list."
+          "reverse": {
+            "type": "boolean",
+            "description": "Reverse the order of the underlying list."
+          },
+          "sortKey": {
+            "$ref": "#/shapes/Shopify_ProductSortKeys/schema",
+            "description": "Sort the underlying list by the given key."
+          },
+          "query": {
+            "type": "string",
+            "description": "Supported filter parameters:\n - `barcode`\n - `created_at`\n - `delivery_profile_id`\n - `error_feedback`\n - `gift_card`\n - `inventory_total`\n - `is_price_reduced`\n - `out_of_stock_somewhere`\n - `price`\n - `product_type`\n - `publishable_status`\n - `published_status`\n - `sku`\n - `status`\n - `tag`\n - `title`\n - `updated_at`\n - `vendor`\n\nSee the detailed [search syntax](https://help.shopify.com/api/getting-started/search-syntax)\nfor more information about using filters."
+          },
+          "savedSearchId": {
+            "type": "string",
+            "@tag": "id",
+            "description": "ID of an existing saved search.\nThe search’s query string is used as the query argument."
           }
         }
       },
